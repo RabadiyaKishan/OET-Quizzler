@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561286778177",
+    "project_id": "oshwal-education-trust",
+    "storage_bucket": "oshwal-education-trust.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561286778177:android:badd4083494e990237a5c0",
+        "android_client_info": {
+          "package_name": "com.oet.quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561286778177-rdvldlheuv6a0bjv8bkq7v8eca5odudm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD4K08rNOl_DhU847pp1UV1OFeOBzOEVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561286778177-rdvldlheuv6a0bjv8bkq7v8eca5odudm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

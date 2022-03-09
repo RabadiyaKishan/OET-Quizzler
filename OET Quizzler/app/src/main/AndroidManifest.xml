@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.oet.quiz">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx"
+        android:fullBackupOnly="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label, android:icon, android:theme,android:appComponentFactory">
+        <activity
+            android:name=".Activity.ActivityViewAttemptedQuestionList"
+            android:label="Result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityExamList"
+            android:label="Exam List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityExamTimeSlot"
+            android:label="Exam Time Slot"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Activity.ActivitySelectStateCitySchool" />
+
+        <activity
+            android:name=".Activity.ActivityResult"
+            android:label="Result"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Services.TimerService" />
+
+        <activity android:name=".Activity.ActivityLoadQuestionList" />
+        <activity
+            android:name=".Activity.ActivityFeedback"
+            android:label="Feedback"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity.ActivitySplash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.ActivityDrawer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoActionBar" />
+        <activity
+            android:name=".Activity.ActivityContactUs"
+            android:label="Contact Us" />
+        <activity
+            android:name=".Activity.ActivityAboutUs"
+            android:label="About Us" />
+        <activity
+            android:name=".Activity.ActivityPasswordChangeAfterLogin"
+            android:label="Password Change" />
+        <activity
+            android:name=".Activity.ActivityProfile"
+            android:label="Profile" />
+        <activity
+            android:name=".Activity.ActivityResultList"
+            android:label="Result" />
+        <activity
+            android:name=".Activity.ActivityExamScheduleList"
+            android:label="Exam Scheduler" />
+        <activity
+            android:name=".Activity.ActivitySelectStreamCourse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityPasswordSettingUpFirstTime"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityOTPVerify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityLogin"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+    </application>
+
+</manifest>
